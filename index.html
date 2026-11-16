@@ -156,6 +156,10 @@ button.btn{cursor:pointer;font:inherit;font-family:var(--display);font-weight:70
 .video div{padding:32px;display:grid;gap:14px;align-content:center;justify-items:start}
 .url{font-size:.85rem;color:var(--muted);word-break:break-all}
 
+.video + .video{margin-top:24px}
+.drive{aspect-ratio:16/9;margin:20px;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:#000}
+.drive iframe{width:100%;height:100%;border:0;display:block}
+
 /* Construcción y ciencia */
 .build{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;list-style:none;margin:0;padding:0}
 .build li{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--violet);border-radius:10px;padding:14px 16px;font-size:.95rem;color:var(--muted)}
@@ -414,6 +418,15 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);f
         <span class="url">Si el video no carga, <a href="https://www.instagram.com/p/De2KpeWhHwT/" target="_blank" rel="noopener">ábrelo en Instagram</a>.</span>
       </div>
       <div class="insta"><iframe src="https://www.instagram.com/p/De2KpeWhHwT/embed/" title="Video del proyecto VULCANO en Instagram" loading="lazy" allowfullscreen scrolling="no"></iframe></div>
+    </div>
+    <div class="video" id="video-hackaton">
+      <div class="drive"><iframe src="https://drive.google.com/file/d/1RdL2oZ22aZXAW7nl_Ooab1qDQISuEQFc/preview" title="Video del hackatón del equipo VULCANO" loading="lazy" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+      <div>
+        <p class="eyebrow">Video del hackatón</p>
+        <h2>VULCANO en el hackatón</h2>
+        <p class="lead">Video del equipo para el NASA Space Apps Challenge.</p>
+        <span class="url">Si el video no carga, <a href="https://drive.google.com/file/d/1RdL2oZ22aZXAW7nl_Ooab1qDQISuEQFc/view" target="_blank" rel="noopener">ábrelo en Google Drive</a>.</span>
+      </div>
     </div>
   </div>
 </section>
